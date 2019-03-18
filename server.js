@@ -54,5 +54,5 @@ app.delete('/api/songs/:songId', function (req, res){
     res.status(200).send( songs );
 });
 //запуск
-app.listen(process.event.PORT || 3010);
+app.listen(process.env.PORT || 3010);
 console.log('Сервер запущен!');
